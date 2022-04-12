@@ -8,13 +8,9 @@ import javax.persistence.Id;
 public class EmployeeDto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private long id;
 
     @Column(name = "name")
     private String name;
-
-//        @Column(name = "leavedate")
-//        private String leavedate;
 
     @Column(name = "leavetype")
     private String leavetype;

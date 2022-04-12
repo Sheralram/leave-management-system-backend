@@ -23,8 +23,6 @@ public class EmployeeController {
     @Autowired
     public EmployeeRepository employeeRepository;
 
-
-
     @GetMapping("/employees-list")
     public List<Employee> getEmployeesList() {
         return employeeRepository.findAll();
@@ -63,8 +61,10 @@ public class EmployeeController {
         Map<String, Boolean> response = new HashMap<>();
         response.put("deleted", Boolean.TRUE);
         return ResponseEntity.ok(response);
-
     }
+
+
+
 
 
 }
